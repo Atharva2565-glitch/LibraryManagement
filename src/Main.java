@@ -1,6 +1,9 @@
+package src;
 // Scanner — read input from keyboard (menu choice, book details, login)
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import Book;
 
 // FileReader, FileWriter, etc. — save and load books from books.txt
 import java.io.*;
