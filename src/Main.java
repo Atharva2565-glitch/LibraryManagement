@@ -1,7 +1,8 @@
+package src;
 // Scanner — read input from keyboard (menu choice, book details, login)
+import src.gui.LoginFrame;
 import java.util.ArrayList;
-import java.util.Scanner;
-
+ import java.util.Scanner;
 // FileReader, FileWriter, etc. — save and load books from books.txt
 import java.io.*;
 
@@ -15,8 +16,7 @@ import java.time.LocalDate;
 public class Main {
 
     // List of all books in the library (loaded from file + sample data)
-    static ArrayList<Book> books = new ArrayList<>();
-
+   public static ArrayList<Book> books = new ArrayList<>();
     // Single Scanner used everywhere for user input
     static Scanner sc = new Scanner(System.in);
 
@@ -27,6 +27,8 @@ public class Main {
      * Program entry point — shows title, login, loads books, then main menu loop.
      */
     public static void main(String[] args) {
+       
+        new LoginFrame(); // Show login GUI
 
         System.out.println("=================================");
         System.out.println(" LIBRARY MANAGEMENT SYSTEM ");
